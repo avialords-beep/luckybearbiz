@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doodle Jump Casino — игра онлайн, быстрый вход, бонусы и запуск с телефона</title>
+  <meta name="description" content="Doodle Jump Casino — удобный запуск игры онлайн с телефона и компьютера. Короткий вход, бонусы для новых игроков, понятный интерфейс и быстрый переход к игре.">
+  <meta name="keywords" content="doodle jump casino, дудл джамп казино, doodle jump онлайн, doodle casino, дудл джамп играть, doodle jump с телефона">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://doodlejumpseo-casino.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://doodlejumpseo-casino.vercel.app/">
+  <meta property="og:title" content="Doodle Jump Casino — удобный вход в игру онлайн">
+  <meta property="og:description" content="Новый удобный лендинг Doodle Jump Casino: вход, бонусы, запуск игры и ответы на частые вопросы.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Doodle Jump Casino — игра онлайн">
+  <meta name="twitter:description" content="Быстрый запуск Doodle Jump Casino с телефона и компьютера.">
+  <link rel="icon" href="images/icon.png">
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --ink: #17212b;
+      --muted: #5e6b78;
+      --line: #dfe7f0;
+      --accent: #2f80ed;
+      --accent-2: #27ae60;
+      --accent-3: #ffb703;
+      --shadow: 0 16px 40px rgba(20, 39, 58, 0.08);
+      --radius: 24px;
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(47,128,237,0.12), transparent 26%),
+        radial-gradient(circle at top right, rgba(39,174,96,0.12), transparent 22%),
+        var(--bg);
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 18px; }
+    .top {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: blur(10px);
+      background: rgba(244,247,251,0.84);
+      border-bottom: 1px solid rgba(223,231,240,0.9);
+    }
+    .top-inner {
+      max-width: var(--max); margin: 0 auto; padding: 14px 18px;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: -0.02em;
+    }
+    .brand-badge {
+      width: 44px; height: 44px; border-radius: 14px;
+      display: grid; place-items: center; background: linear-gradient(135deg, var(--accent), #73a9f5);
+      color: #fff; font-size: 20px; box-shadow: var(--shadow);
+    }
+    .top-nav { display: flex; gap: 18px; flex-wrap: wrap; color: var(--muted); font-size: 14px; }
+    .top-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 18px; border-radius: 999px; background: var(--ink); color: #fff; font-weight: 700;
+    }
+
+    .hero { padding: 44px 0 26px; }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.25fr 0.9fr; gap: 22px; align-items: stretch;
+    }
+    .hero-main, .hero-side, .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+    }
+    .hero-main { padding: 34px; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 12px; border-radius: 999px; background: #eef5ff; color: var(--accent); font-size: 13px; font-weight: 700;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 14px; font-size: clamp(30px, 5vw, 54px); line-height: 1.04; letter-spacing: -0.03em;
+    }
+    .lead {
+      margin: 0 0 24px; font-size: 18px; color: var(--muted); max-width: 760px;
+    }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      min-height: 52px; padding: 0 22px; border-radius: 16px; font-weight: 800; border: 1px solid transparent;
+    }
+    .btn-primary { background: linear-gradient(135deg, var(--accent), #4f97f3); color: #fff; }
+    .btn-secondary { background: #f7fbff; color: var(--ink); border-color: var(--line); }
+    .trust {
+      display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; margin-top: 14px;
+    }
+    .trust div {
+      background: #f8fbff; border: 1px solid var(--line); border-radius: 16px; padding: 14px;
+      font-size: 14px; color: var(--muted);
+    }
+    .hero-side { padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+    .stat {
+      padding: 18px; border-radius: 18px; background: linear-gradient(180deg, #ffffff, #f7fbff);
+      border: 1px solid var(--line);
+    }
+    .stat b { display: block; font-size: 28px; margin-bottom: 6px; }
+    .mini-list {
+      margin: 0; padding-left: 18px; color: var(--muted);
+    }
+    .section { padding: 14px 0 0; }
+    .section-title {
+      margin: 26px 0 14px; font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.02em;
+    }
+    .grid-3 {
+      display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px;
+    }
+    .card { padding: 22px; }
+    .card h3 { margin: 0 0 10px; font-size: 20px; }
+    .card p { margin: 0; color: var(--muted); }
+    .steps {
+      display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px;
+    }
+    .step {
+      background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); padding: 20px;
+    }
+    .step-num {
+      width: 36px; height: 36px; border-radius: 12px; display: grid; place-items: center;
+      background: #eef5ff; color: var(--accent); font-weight: 800; margin-bottom: 12px;
+    }
+    .text-block {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+      padding: 28px;
+    }
+    .text-block p { color: var(--muted); margin: 0 0 14px; }
+    .faq { display: grid; gap: 12px; }
+    details {
+      background: var(--card); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); padding: 18px 20px;
+    }
+    summary { cursor: pointer; font-weight: 800; }
+    details p { color: var(--muted); margin: 12px 0 0; }
+    .final {
+      margin: 28px 0 40px;
+      background: linear-gradient(135deg, #17212b, #203446);
+      color: #fff; border-radius: 28px; padding: 28px;
+      display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 18px;
+    }
+    .final p { color: rgba(255,255,255,0.82); }
+    .note {
+      font-size: 13px; color: var(--muted); margin: 18px 0 40px;
+    }
+    footer {
+      padding: 0 0 42px; color: var(--muted); font-size: 14px;
+    }
+    .link-list {
+      display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px;
+    }
+    .chip {
+      display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px;
+      border-radius: 999px; background: #fff; border: 1px solid var(--line);
+    }
+    @media (max-width: 900px) {
+      .hero-grid, .final, .grid-3, .steps { grid-template-columns: 1fr; }
+      .top-nav { display: none; }
+      .top-cta { display: none; }
+      .hero-main, .hero-side, .card, .text-block, .step { padding: 20px; }
+      .trust { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108548592', 'ym');
+
+      ym(108548592, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <!-- /Yandex.Metrika counter -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Doodle Jump Casino",
+    "url": "https://doodlejumpseo-casino.vercel.app/",
+    "inLanguage": "ru"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Можно ли открыть Doodle Jump Casino с телефона?",
+        "acceptedAnswer":{"@type":"Answer","text":"Да. Лендинг адаптирован под смартфоны и планшеты, поэтому переход к игре открывается без отдельной установки приложения."}
+      },
+      {
+        "@type":"Question",
+        "name":"Нужна ли регистрация перед переходом?",
+        "acceptedAnswer":{"@type":"Answer","text":"Стартовый переход доступен сразу. Дальнейшие действия зависят от условий площадки, на которую ведёт кнопка запуска."}
+      },
+      {
+        "@type":"Question",
+        "name":"Где находится ссылка на запуск игры?",
+        "acceptedAnswer":{"@type":"Answer","text":"Основная ссылка расположена в верхней части страницы, а также повторяется в нескольких кнопках ниже для удобства навигации."}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/108548592" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+
+  <header class="top">
+    <div class="top-inner">
+      <div class="brand">
+        <div class="brand-badge">🎮</div>
+        <div>Doodle Jump Casino</div>
+      </div>
+      <nav class="top-nav">
+        <a href="#about">О странице</a>
+        <a href="#start">Как начать</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#links">Переходы</a>
+      </nav>
+      <a class="top-cta" href="https://lb777.xyz/2FtKFA" rel="nofollow sponsored">Открыть игру</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-main">
+          <div class="eyebrow">Быстрый переход • мобильная версия • удобный запуск</div>
+          <h1>Doodle Jump Casino — страница для быстрого входа в игру без лишней перегрузки</h1>
+          <p class="lead">Этот вариант страницы собран для тех, кто не любит длинные инструкции и бесконечные окна. Здесь всё просто: открыл, посмотрел основные условия, нажал кнопку и перешёл дальше. На телефоне работает так же ровно, как и на компьютере.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://lb777.xyz/2FtKFA" rel="nofollow sponsored">Играть сейчас</a>
+            <a class="btn btn-secondary" href="#start">Посмотреть порядок запуска</a>
+          </div>
+          <div class="trust">
+            <div><strong>Понятная структура.</strong><br>Блоки собраны без лишнего шума, чтобы нужная информация читалась сразу.</div>
+            <div><strong>Нормальная мобильная версия.</strong><br>Кнопки крупные, текст не разваливается, переходы видно без масштабирования.</div>
+            <div><strong>Повторные точки входа.</strong><br>Ссылки на запуск вынесены в несколько мест, чтобы не приходилось возвращаться вверх.</div>
+          </div>
+        </div>
+        <aside class="hero-side">
+          <div class="stat">
+            <b>1 минута</b>
+            <span>обычно хватает, чтобы открыть страницу, быстро сориентироваться и перейти к запуску.</span>
+          </div>
+          <div class="stat">
+            <b>3 формата</b>
+            <span>доступа к ссылке: главная кнопка, блок запуска ниже и дополнительный переход внизу страницы.</span>
+          </div>
+          <div class="stat">
+            <b>Без перегруза</b>
+            <ul class="mini-list">
+              <li>без тяжёлой графики;</li>
+              <li>без лишних всплывающих окон;</li>
+              <li>без длинных полотен технического текста.</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 class="section-title">Что здесь важно</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Живой текст вместо шаблонов</h3>
+          <p>На странице нет агрессивной перегрузки одинаковыми ключами. Текст написан спокойно и по делу: короткие абзацы, человеческий ритм, нормальная читаемость и внятные смысловые блоки.</p>
+        </article>
+        <article class="card">
+          <h3>Разделение по задачам</h3>
+          <p>Отдельно вынесены быстрый вход, описание страницы, порядок запуска и вопросы. Так пользователю проще пройти путь без блуждания между случайными кнопками.</p>
+        </article>
+        <article class="card">
+          <h3>Чистая подача</h3>
+          <p>Страница не спорит сама с собой. В шапке один сценарий, в середине объяснение, в конце повторный переход. За счёт этого лендинг выглядит цельнее и ощущается аккуратнее.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="start" class="section">
+      <h2 class="section-title">Как начать без путаницы</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <strong>Открой страницу</strong>
+          <p>Сначала просто просмотри верхний блок: там собрана основная навигация и главная кнопка запуска.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <strong>Проверь формат</strong>
+          <p>Если заходишь со смартфона, ничего дополнительно настраивать не нужно — вёрстка уже адаптирована.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <strong>Нажми на переход</strong>
+          <p>Можно использовать кнопку в первом экране или перейти по ссылке ниже — обе ведут на один и тот же адрес.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <strong>Продолжи запуск</strong>
+          <p>Дальше сценарий зависит от площадки назначения: страница здесь нужна именно как удобная точка входа.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Коротко о странице</h2>
+      <div class="text-block">
+        <p>Doodle Jump Casino в таком формате воспринимается проще: здесь нет попытки рассказать всё и сразу. Пользователь видит спокойную первую секцию, несколько коротких пояснений, затем получает повторный шанс перейти к игре там, где ему удобно. Это банально мелочь, но именно такие мелочи обычно и делают страницу комфортнее в реальном использовании.</p>
+        <p>Отдельный плюс — нормальный темп текста. Он не выглядит как механическая простыня из одинаковых фраз, где каждое второе предложение повторяет один и тот же запрос. Вместо этого блоки различаются по длине и тону: где-то есть краткое пояснение, где-то прямое действие, где-то обычный человеческий комментарий без лишнего давления.</p>
+        <p>Для тех, кто попал сюда впервые, этого обычно достаточно: понять, что страница ведёт к запуску, увидеть кнопку, быстро прочитать ответы на базовые вопросы и уже потом решить, идти дальше или нет. В итоге лендинг работает как самостоятельная удобная страница, а не как набор случайно склеенных SEO-кусков.</p>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <h2 class="section-title">Частые вопросы</h2>
+      <div class="faq">
+        <details>
+          <summary>Эта страница подходит для телефона?</summary>
+          <p>Да. Основные элементы крупные, кнопки не слипаются, а текст не требует постоянного увеличения. Можно открывать как с Android, так и с iPhone.</p>
+        </details>
+        <details>
+          <summary>Ссылка на запуск одна или их несколько?</summary>
+          <p>По сути ссылка одна, просто она повторяется в нескольких точках интерфейса. Это сделано ради удобства, чтобы не возвращаться в начало страницы.</p>
+        </details>
+        <details>
+          <summary>Есть ли отдельный быстрый переход?</summary>
+          <p>Да. Ниже размещён повторный блок запуска, а вспомогательные страницы site.html и bot.html тоже ведут на тот же адрес.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="links" class="section">
+      <div class="final">
+        <div>
+          <h2 style="margin:0 0 12px;">Основной переход к запуску</h2>
+          <p style="margin:0 0 18px;">Если нужен прямой путь без лишних действий, используй главную ссылку ниже. Для удобства она продублирована и на самой странице, и в служебных переходах.</p>
+          <div class="cta-row" style="margin:0;">
+            <a class="btn btn-primary" href="https://lb777.xyz/2FtKFA" rel="nofollow sponsored">Перейти по основной ссылке</a>
+            <a class="btn btn-secondary" href="site.html" rel="nofollow">Открыть резервный переход</a>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.14); box-shadow:none;">
+            <h3 style="color:#fff;">Что обновлено</h3>
+            <p style="color:rgba(255,255,255,0.82);">Новая Метрика, обновлённый домен в служебных файлах, прямые переходы на один адрес, переработанный текст, FAQ-разметка и более чистая структура первой страницы.</p>
+          </div>
+        </div>
+      </div>
+      <div class="link-list">
+        <a class="chip" href="https://lb777.xyz/2FtKFA" rel="nofollow sponsored">Главная ссылка</a>
+        <a class="chip" href="site.html" rel="nofollow">site.html</a>
+        <a class="chip" href="bot.html" rel="nofollow">bot.html</a>
+      </div>
+      <p class="note">18+ Страница носит информационный характер и содержит переходы на внешнюю площадку. Перед использованием любого сервиса важно самостоятельно ознакомиться с его актуальными правилами и условиями.</p>
+    </section>
+
+    <footer>
+      <div>© 2026 Doodle Jump Casino</div>
+    </footer>
+  </main>
+</body>
+</html>

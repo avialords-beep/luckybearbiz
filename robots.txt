@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Sitemap: https://doodlejumpseo-casino.vercel.app/sitemap.xml
